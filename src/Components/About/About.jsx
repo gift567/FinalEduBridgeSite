@@ -1,30 +1,39 @@
-
-
-import React from 'react'
-import './About.css'
-
-import right_arrow from '../../assets/right_arrow.png'
-import about_pic from '../../assets/about_pic.png'
+import library_image from "../../assets/about_pic.png"
+import {ArrowRightOutlined} from "@ant-design/icons";
 
 const About = () => {
-  return (
-    <div className='about-section'>
+    return (
+        <div className="py-14 mx-auto w-5/6 h-screen">
+            <div className="">
+                <div className="">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-6 items-center mb-6">
+                        <div className="flex flex-col space-y-6 col-span-4">
+                            <h1 className="text-xl md:text-3xl text-center md:text-left">ABOUT US</h1>
+                            <span className="font-extrabold text-3xl text-center md:text-6xl md:text-left">
+                                That one stop to your <br/> Online Study Center
+                            </span>
+                        </div>
+                        <div className="h-56 col-span-2 my-8">
+                            <img src={library_image} alt="library_image" className="h-full object-contain"/>
+                        </div>
+                    </div>
+                    <div className="md:w-4/6">
+                        <span className="text-gray-600 text-md md:text-lg">
+                            As an Online Study center ,social enterprise and study abroad agency,
+                            our center combines a commitment to educational excellence with a strong dedication to social impact.
+                            We offer personalized, high-quality learning experiences tailored to individual needs while supporting global educational opportunities that promote cross-cultural understanding. By reinvesting our profits into community-driven initiatives, we ensure that every
+                            student's success also contributes to meaningful, positive change in the world.
+                         </span>
+                        <button className="bg-black text-white px-4 py-2 rounded-lg mt-10 hover:bg-gray-700 flex items-center hover:gap-2">
+                            Learn more
+                            <ArrowRightOutlined className="text-sm ml-2" />
+                        </button>
+                    </div>
+                </div>
 
-        <div className='about-words'>
-        <h3>
-        About Us
-      </h3>
+            </div>
 
-      <h1> That way one stop to your Online <br/> Study Center </h1>
-
-      <p> As an Online Study center ,social enterprise and study abroad agency, our center combines a commitment to educational excellence with a strong dedication to social impact. We offer personalized, high-quality learning experiences tailored to individual needs while supporting global educational opportunities that promote cross-cultural understanding. By reinvesting our profits into community-driven initiatives, we ensure that every student's success also contributes to meaningful, positive change in the world.</p>
-
-      <button className='about_btn'>Learn More <img src={right_arrow} alt='' /> </button>
         </div>
-     
-     <img src= {about_pic} alt=''/>
-    </div>
-  )
+    )
 }
-
 export default About
