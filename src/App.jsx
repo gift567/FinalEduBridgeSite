@@ -2,7 +2,9 @@ import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/About'
-import Language from './Components/Language/Language'
+import Social from './Components/Social/Social'
+
+import Products from './Components/Products/Products'
 
 
 const App = () => {
@@ -11,7 +13,13 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Language/>
+      <Products/>
+      <Social/>
+   
+    
+
+    
+   
     </div>
   )
 }
