@@ -1,10 +1,7 @@
-import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/About'
-import Social from './Components/Social/Social'
-
-import Products from './Components/Products/Products'
+import Language from './Components/Language/Language'
 
 
 const App = () => {
@@ -13,13 +10,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Products/>
-      <Social/>
-   
-    
-
-    
-   
+      <Language/>
     </div>
   )
 }
