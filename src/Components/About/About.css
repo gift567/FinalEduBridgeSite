@@ -21,6 +21,8 @@ h1 {
     text-align: left;
     padding: 20px 8px 8px 8px;
     line-height: 45px;
+    font-weight: 600;
+    font-size: 60px;
 }
 
 h3 {
