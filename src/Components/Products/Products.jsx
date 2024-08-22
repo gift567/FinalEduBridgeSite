@@ -12,7 +12,7 @@ const Products = () => {
 
     <section>
     <div class="row">
-      <h1>Learn English and French  with EEC</h1>
+      <h1>Learn English and French  with Us</h1>
       <p>Improve your English and French speaking, listening,reading and writing skills with our expert teachers</p>
     </div>
     <div class="row">
@@ -25,7 +25,7 @@ const Products = () => {
           <i class="fa-solid fa-people-arrows"></i>
           </div>
           <h3>Learn English</h3>
-          <p>
+          <p className="text-gray-600 text-md md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
             asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
             commodi.
@@ -40,7 +40,7 @@ const Products = () => {
           <i class="fa-solid fa-people-arrows"></i>
           </div>
           <h3>Learn French</h3>
-          <p>
+          <p className="text-gray-600 text-md md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
             asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
             commodi.

@@ -8,9 +8,9 @@ const About = () => {
                 <div className="">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-6 items-center mb-6">
                         <div className="flex flex-col space-y-6 col-span-4">
-                            <h1 className="text-xl md:text-3xl text-center md:text-left">ABOUT US</h1>
+                            <h1 className="text-xl md:text-0.5xl text-center md:text-left tracking-wider">ABOUT US</h1>
                             <span className="font-extrabold text-3xl text-center md:text-6xl md:text-left">
-                                That one stop to your <br/> Online Study Center
+                                That one way stop <br/>to your  Online  Study Center
                             </span>
                         </div>
                         <div className="h-56 col-span-2 my-8">
