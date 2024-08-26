@@ -11,7 +11,7 @@
 .social-container h2{
     width: 100%;
     text-align: center;
-    font-size: 2.75em;
+    font-size: 3.75em;
     margin: 0.5em ;
     font-weight: 600;
     color: #070024;
@@ -25,7 +25,7 @@
 }
 
 .social-container .services .card{
-    width: 350px;
+    width: 550px;
     text-align: center;
     background: #fafafa;
     padding: 20px 15px;
@@ -62,7 +62,7 @@
 
 .social-container .services .card .content .title{
     padding: 5px 0;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 500;
     color: rgb(0, 0, 0);
     transition: 0.3s;

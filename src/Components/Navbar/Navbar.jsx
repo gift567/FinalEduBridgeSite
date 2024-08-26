@@ -8,8 +8,7 @@ const Navbar = () => {
 
 <img src={logo} alt="" className='logo'/>
 <ul>
-    <Link to="/Edubridge-github
-">
+    <Link to="/Edubridge-github">
         <li>Home</li>
     </Link>
     <li>ABOUT US</li>
