@@ -5,6 +5,7 @@ import Social from './Components/Social/Social';
 import Products from './Components/Products/Products';
 import Workstation from './Components/Workstation/Workstation'
 import Footer from '../src/Footer';
+import Banner from '../src/Components/Banner/Banner';
 import Contact from './Components/Contact/Contact';
 import StudyAbroadCarousel from './Components/study-abroad/ui/StudyAbroadCarousel'
 
@@ -25,7 +26,7 @@ const App = () => {
         <Social/>
         <Workstation/>
         <Contact/>
-
+        <StudyAbroadCarousel/>
         <Footer />
     </div>
   )
