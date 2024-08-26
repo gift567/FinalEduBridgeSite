@@ -22,7 +22,6 @@ const App = () => {
         <Workstation/>
         <StudyAbroadCarousel/>
         <Contact/>
-
         <Footer />
     </div>
   )
