@@ -4,10 +4,12 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import App from "./App.jsx";
 import StudyAbroad from "./Components/study-abroad/StudyAbroad.jsx";
+import Services from "./Components/Services/Services.jsx";
 
 const router = createBrowserRouter([
     { path: 'Edubridge-github', element: <App />},
     { path: '/Edubridge-github/study-abroad', element: <StudyAbroad />},
+    { path: '/Edubridge-github/services', element: <Services />},
 ])
 
 createRoot(document.getElementById('root')).render(
