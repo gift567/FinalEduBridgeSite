@@ -1,4 +1,3 @@
-import React from 'react'
 import desk from '../../assets/desk.png'
 import './Workstation.css'
 import logo from '../../assets/logo.png'
