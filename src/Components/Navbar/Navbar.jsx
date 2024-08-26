@@ -13,7 +13,9 @@ const Navbar = () => {
         <li>Home</li>
     </Link>
     <li>ABOUT US</li>
-    <li>SERVICES</li>
+    <Link to="/Edubridge-github/services" >
+         <li>SERVICES</li>
+    </Link>
     <Link to="/Edubridge-github
 /study-abroad">
         <li>STUDY ABROAD</li>

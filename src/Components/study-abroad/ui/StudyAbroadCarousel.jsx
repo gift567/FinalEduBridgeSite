@@ -24,7 +24,7 @@ const SPRING_OPTIONS = {
     damping: 50,
 };
 
-export const StudyAbroadCarousel = () => {
+export default function StudyAbroadCarousel () {
     const [imgIndex, setImgIndex] = useState(0);
     const dragX = useMotionValue(0);
 

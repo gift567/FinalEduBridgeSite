@@ -4,15 +4,19 @@ import About from './Components/About/About'
 import Social from './Components/Social/Social';
 import Products from './Components/Products/Products';
 import Workstation from './Components/Workstation/Workstation'
-import Footer from '../src/Footer';
 import Contact from './Components/Contact/Contact';
-import StudyAbroadCarousel from './Components/study-abroad/ui/StudyAbroadCarousel'
-
+import Language from "./Components/Social/Social.jsx";
+import Footer from "./Footer.jsx";
+import StudyAbroadCarousel from "./Components/study-abroad/ui/StudyAbroadCarousel.jsx";
+import {useEffect} from "react";
 
 
 
 const App = () => {
-  return (
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    return (
     <div>
         <Navbar/>
         <Hero/>
@@ -22,7 +26,7 @@ const App = () => {
         <Workstation/>
         <StudyAbroadCarousel/>
         <Contact/>
-
+        <Language/>
         <Footer />
     </div>
   )
