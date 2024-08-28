@@ -9,7 +9,7 @@ const Navbar = () => {
 <img src={logo} alt="" className='logo'/>
 <ul>
     <Link to="/Edubridge-github">
-        <li>Home</li>
+        <li>HOME</li>
     </Link>
     <li>ABOUT US</li>
     <Link to="/Edubridge-github/services" >
