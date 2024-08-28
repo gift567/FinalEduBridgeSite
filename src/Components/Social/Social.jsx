@@ -25,6 +25,13 @@ const Language = () => {
                 </div>
             </div>
            
+            <div class="card">
+                <div class="content">
+                    <div class="so-icon"><img src= {kidss} alt=''/></div>
+                    <div class="title">Environmental Sustainability</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                </div>
+            </div>
             
         
         </section>

@@ -1,10 +1,14 @@
 
-
+.container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
 
 nav{
-    width: 100%;
+    width: 80%;
     background-color: rgb(255, 255, 255);
-    padding: 4px 0;
+    padding: 4px 0; 
     position: fixed;
     top: 0;
     left: 0;
