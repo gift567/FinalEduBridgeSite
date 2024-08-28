@@ -6,7 +6,7 @@ const Language = () => {
   return (
     <div class="social-container">
         <h2>Our Social Enterprise Respsibilities</h2>
-        <p className="text-gray-600 text-center text-md md:text-lg">
+        <p className="text-gray-600 md:text-2xl text-md">
         As a social enterprise, our online study center is dedicated to making a positive impact by focusing on the education and empowerment of orphanages. We reinvest our resources to provide these vulnerable youth with access to quality learning opportunities and support, helping them build a brighter future. Through our commitment to education and social responsibility, we strive to create meaningful change and offer a path to success for those who need it most.
           </p>
         <section class="services">

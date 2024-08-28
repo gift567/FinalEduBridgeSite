@@ -17,6 +17,16 @@
     color: #070024;
 }
 
+
+
+.social-container p{
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem;
+    line-height: 40px;
+  }
+
+
 .social-container .services{
     justify-content: space-around;
     display: flex;

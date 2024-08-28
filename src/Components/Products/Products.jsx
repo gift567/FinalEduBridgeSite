@@ -13,7 +13,7 @@ const Products = () => {
     <section>
     <div class="row">
       <h1>Learn English and French  with Us</h1>
-      <p>Improve your English and French speaking, listening,reading and writing skills with our expert teachers</p>
+      <p className="text-gray-600 md:text-3xl text-md ">Improve your English and French speaking, listening,reading and writing skills with our expert teachers</p>
     </div>
     <div class="row">
 

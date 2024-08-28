@@ -7,7 +7,8 @@ import Workstation from './Components/Workstation/Workstation'
 import Footer from '../src/Footer';
 import Banner from '../src/Components/Banner/Banner';
 import Contact from './Components/Contact/Contact';
-import StudyAbroadCarousel from './Components/study-abroad/ui/StudyAbroadCarousel'
+import Subscribe from './Components/Subscribe/Subscribe';
+
 import {useEffect} from 'react';
 
 
@@ -26,8 +27,8 @@ const App = () => {
         <Products/>
         <Social/>
         <Workstation/>
-        <StudyAbroadCarousel/>
         <Contact/>
+        <Subscribe/>
         <Footer />
     </div>
   )
