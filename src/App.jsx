@@ -8,8 +8,10 @@ import Banner from '../src/Components/Banner/Banner';
 import Contact from './Components/Contact/Contact';
 import Book from './Components/Booking/Book';
 import Subscribe from './Components/Subscribe/Subscribe';
+import Slider from './Components/Slider/Slider';
 
 import {useEffect} from 'react';
+
 
 
 
@@ -28,6 +30,7 @@ const App = () => {
         <Social/>
         <Book/>
         <Contact/>
+        <Slider/>
         <Subscribe/>
         <Footer />
     </div>
