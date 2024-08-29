@@ -6,7 +6,7 @@ import Products from './Components/Products/Products';
 import Footer from '../src/Footer';
 import Banner from '../src/Components/Banner/Banner';
 import Contact from './Components/Contact/Contact';
-import Book from './Components/Booking/Book'
+import Book from './Components/Booking/Book';
 import Subscribe from './Components/Subscribe/Subscribe';
 
 import {useEffect} from 'react';

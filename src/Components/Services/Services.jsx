@@ -17,9 +17,11 @@ const Services = () => {
             <Navbar/>
             <div
                 style={{
-                    backgroundImage: `url(${servicesImage})`
+                    backgroundImage: `url(${servicesImage})`,
+                    
+                    
                 }}
-                className="h-screen flex items-center bg-no-repeat bg-cover bg-center
+                className=" h-4.5 h-screen flex items-center bg-no-repeat bg-cover bg-center
                     bg-gray-800 bg-opacity-75 px-5 md:px-24"
             >
                 <div className="flex flex-col gap-4 w-full">

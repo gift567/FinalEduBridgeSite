@@ -9,7 +9,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 750px;
+  max-width: 850px;
+  height: 650px;
   background: linear-gradient(rgba(7, 7, 7, 0.7),rgba(20, 20, 20, 0.7)),url('../../assets/bb.jpg');
   background-size: cover;
   background-position: center;
@@ -33,22 +34,25 @@
   display: flex;
   flex-direction: column;
   margin-right: 4%;
+ 
 }
 
 .input-fields,
 .msg{
   width: 48%;
+ 
 }
 
 .input-fields .input,
 .msg textarea{
-  margin: 10px 0;
+  margin: 30px 0;
   background: transparent;
   border: 0px;
   border-bottom: 2px solid #E9AB17;
   padding: 10px;
   color: #ffffff;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .msg textarea{
@@ -78,6 +82,7 @@
     text-transform: uppercase;
     width: 150px;
     border-radius: 30px;
+    font-size: 1.5rem;
 }
 
 .con-btn:hover{
