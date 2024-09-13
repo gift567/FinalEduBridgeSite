@@ -1,0 +1,149 @@
+
+
+.about-con{
+    padding: 20px;
+    
+    margin: 0 auto;
+    margin-top: 10rem;
+    text-align: center;
+  
+    width: 100%;
+    
+  }
+
+  .about-con h1{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+  .about-con p{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+
+
+  .box-con{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+ 
+  }
+
+.box-con img{
+   
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.box-con-txt {
+    text-align: center;
+    height: 20vh;
+    width: 60%;
+    font-family: sans-serif;
+}
+
+.box-con-txt h1 {
+    font-size: 2em;
+    margin: 0 0 10px;
+    
+}
+
+.box-con-txt p {
+    font-size: 1em;
+    margin: 0;
+    margin-left: 2vh;
+    text-align: center;
+   
+}
+
+
+
+
+/* Responsive about image and text*/
+@media (min-width: 768px) {
+    .box-con {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .box-con img {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .box-con-txt p {
+        flex: 1;
+        text-align: left;
+        line-height: 4vh;
+    }
+}
+
+
+/* card sliders about image and text*/
+
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  
+    position: relative;
+}
+
+.card {
+    width: 900px;
+    height: 700px;
+    margin: 10vh;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 50vh;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .card {
+        min-width: 200px;
+        margin: 0 5px;
+    }
+}
+
+/* Slider animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.slider:hover .card {
+    animation: slide 15s infinite linear;
+}

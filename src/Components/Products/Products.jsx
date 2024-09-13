@@ -20,7 +20,7 @@ const Products = () => {
      
 
       <div class="column">
-        <div class="card">
+        <div class="product-con">
           <div class="icon">
           <i class="fa-solid fa-people-arrows"></i>
           </div>
@@ -34,8 +34,26 @@ const Products = () => {
         </div>
       </div>
     
+
       <div class="column">
-        <div class="card">
+        <div class="product-con">
+          <div class="icon">
+          <i class="fa-solid fa-people-arrows"></i>
+          </div>
+          <h3>Learn Spanish</h3>
+          <p className="text-gray-600 text-md md:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
+            commodi.
+          </p>
+          <button className='btn'>Learn More <img src={right_arrow} alt='' /> </button>
+        </div>
+      </div>
+
+
+
+      <div class="column">
+        <div class="product-con">
           <div class="icon">
           <i class="fa-solid fa-people-arrows"></i>
           </div>
@@ -49,6 +67,24 @@ const Products = () => {
           <button className='btn'>Learn More <img src={right_arrow} alt='' /> </button>
         </div>
       </div>
+
+
+      <div class="column">
+        <div class="product-con">
+          <div class="icon">
+          <i class="fa-solid fa-people-arrows"></i>
+          </div>
+          <h3>Learn German</h3>
+          <p className="text-gray-600 text-md md:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            asperiores natus ad molestiae aliquid explicabo. Iste eaque quo et
+            commodi.
+          </p>
+          <button className='btn'>Learn More <img src={right_arrow} alt='' /> </button>
+        </div>
+      </div>
+
+
     </div>
   </section>
 

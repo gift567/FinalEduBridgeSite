@@ -1,10 +1,28 @@
 import servicesImage from "../../assets/services_image.png"
-import examPreparationImage from "../../assets/examination-preparation-image.png"
-import Navbar from "../Navbar/Navbar.jsx";
-import DefaultOnlineCourseCard from "./ui/DefaultOnlineCourseCard.jsx";
-import {BankOutlined, EditOutlined, FileDoneOutlined} from "@ant-design/icons";
+import examPreparationImage from "../../assets/exam_image.JPG"
+import Navbar from "../Navbar/Navbar.jsx"
+import ServiceCard from "./ui/ServiceCard.jsx";
+import community_development from "../../assets/community_development.JPG";
+import environmental_sustainability from "../../assets/environmental_sustainability.png";
+import profile_assessment from "../../assets/profile_assessment.JPG";
+import university_selection from "../../assets/university_selection.JPG";
+import application_assistance from "../../assets/application_assistance.JPG";
+
+import {
+    ArrowRightOutlined,
+    BankOutlined,
+    BuildOutlined,
+    DesktopOutlined,
+    EditOutlined,
+    FileDoneOutlined,
+    FileOutlined, VideoCameraOutlined
+} from "@ant-design/icons";
 import {Input} from "antd";
 import {useEffect} from "react";
+
+import Footer from "../../Footer.jsx";
+import Hero from "../Hero/Hero.jsx";
+import SocialResponsiblityComponent from "../study-abroad/ui/social-responsibility-section.component.jsx";
 
 
 
@@ -15,80 +33,92 @@ const Services = () => {
     return (
         <div>
             <Navbar/>
-            <div
+          
+
+          <div
+                className="h-screen grid place-items-center"
                 style={{
-                    backgroundImage: `url(${servicesImage})`,
-                    
-                    
+                    backgroundImage: `url(${examPreparationImage})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+
                 }}
-                className=" h-4.5 h-screen flex items-center bg-no-repeat bg-cover bg-center
-                    bg-gray-800 bg-opacity-75 px-5 md:px-24"
             >
-                <div className="flex flex-col gap-4 w-full">
-                    <span
-                        className="text-gray-300 font-semibold text-xl">Let us be the bridge to your academic success</span>
-                    <h1 className="text-white font-extrabold text-4xl md:text-7xl">Best Online Study <br/> Center </h1>
-
-                    <div className="bg-yellow-500 text-white w-fit px-4 py-3 font-semibold mt-4">
-                        <span>Online Courses</span>
-                    </div>
-                </div>
-            </div>
-            <div className="flex mx-auto w-4/5 justify-center gap-10 mt-[-70px] my-16 ">
-                <DefaultOnlineCourseCard
-                    title="Profile Assessment"
-                    Icon={FileDoneOutlined}
-                />
-                <DefaultOnlineCourseCard
-                    title="University Selection"
-                    Icon={BankOutlined}
-                />
-                <DefaultOnlineCourseCard
-                    title="Application Assistance"
-                    Icon={EditOutlined}
-                />
-            </div>
-            <div className="w-full text-center flex flex-col items-center">
-                <span className="text-xl mt-4 font-semibold">Connect with us now!</span>
-                <div className="flex mt-5">
-                    <Input
-                        placeholder="Enter your email..."
-                        className="max-w-lg md:w-[340px] mr-2"
-                    />
-                    <button className="bg-black text-sm text-white px-10 rounded">Subscribe</button>
-                </div>
-            </div>
-            <div
-                className="relative"
-                // style={{
-                //     backgroundImage: `url(${})`
-                // }}
-                // className="h-screen flex items-center bg-no-repeat bg-cover bg-center
-                //     bg-white bg-opacity-75 px-5 md:px-24"
-            >
-                <img src={examPreparationImage}
-                     className="object-cover"
-                     alt="exam-img" />
-
-                <div className="absolute flex flex-col gap-4 top-1/4 right-32">
-                    <h1 className="font-extrabold text-3xl text-center
-                     md:text-6xl md:text-left mb-5">Need Preparations for <br/> IETS Exams?</h1>
+                 <div className="flex flex-col items-center gap-4 top-1/4 md:right-32">
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">Need Preparations for <br/> IETS Exams?</h1>
 
                     <span
-                        className="md:text-xl text-gray-700"
+                        className="mt-6 text-lg leading-8 text-gray-200"
                     >
                         Jasper Consultancy extends a helping hand to students <br/>
                         seeking guidance on their educational journey through our<br/>
                         free consultancy.
                     </span>
 
-                    <button
-                        className="my-3 bg-black text-white rounded-md py-2
-                         px-6 cursor-pointer text-sm font-semibold w-fit">Call
-                        Now
-                    </button>
+                            <a
+                                href="#"
+                                className="rounded-md bg-[#d3ad56] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[]-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            >
+                               Get in Touch
+                            </a>
                 </div>
             </div>
+            <div className="py-24 flex flex-col">
+                <div className="flex flex-col mx-auto text-center">
+                    <h1 className="text-3xl mb-4">OUR SERVICES</h1>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-16 w-4/5 mx-auto gap-8 place-items-center">
+
+                    <ServiceCard 
+                        title="Profile Assessment"
+                        description="
+                         Jasper Consultancy extends a helping hand to 
+                         students seeking guidance on their educational
+                         journey through our Free Counselling services.
+                        "
+                        image={profile_assessment}
+                    />
+                    <ServiceCard 
+                        title="University Selection"
+                        description="
+                         Jasper Consultancy extends a helping hand to 
+                         students seeking guidance on their educational
+                         journey through our Free Counselling services.
+                        "
+                        image={university_selection}
+
+                    />
+                    <ServiceCard 
+                        title="Application Assistance"
+                        description="
+                         Jasper Consultancy extends a helping hand to 
+                         students seeking guidance on their educational
+                         journey through our Free Counselling services.
+                        "
+                        image={application_assistance}
+
+                    />
+
+                </div>
+                <a
+                                href="#"
+                                className="rounded-md bg-[#d3ad56] px-3.5 py-2.5 mx-auto text-sm w-fit font-semibold text-white shadow-sm hover:bg-[]-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            >
+                               Learn More
+                               <ArrowRightOutlined className="text-xs ml-2"/>
+                            </a>
+            </div>
+            <div className="py-20 flex flex-col mx-auto">
+                <SocialResponsiblityComponent />
+                             <a
+                                href="#"
+                                className="rounded-md bg-[#d3ad56] mt-10 px-3.5 py-2.5 mx-auto text-sm w-fit font-semibold text-white shadow-sm hover:bg-[]-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            >
+                               Learn More
+                               <ArrowRightOutlined className="text-xs ml-2"/>
+                            </a>
+              </div>
+            <Footer/>
         </div>
     )
 }

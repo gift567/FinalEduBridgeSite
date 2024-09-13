@@ -40,7 +40,7 @@ section{
  
     
   }
-  .card {
+  .product-con {
     padding: 3.1em 1.25em;
     text-align: center;
     background: linear-gradient(0deg, #E9AB17 10px, transparent 10px);
@@ -51,8 +51,9 @@ section{
     transition: 0.5s;
     cursor: pointer;
     background-color: #ffffff;
+    margin: 20px;
   }
-  .card .icon {
+  .product-con .icon {
     font-size: 2.5em;
     height: 2em;
     width: 2em;
@@ -72,7 +73,7 @@ section{
     border-radius: 50%;
     transition: 0.5s;
   }
-  .card h3 {
+  .product-con h3 {
     font-size: 3.3em;
     margin: 1em 0 1.4em 0;
     font-weight: 600;
@@ -80,14 +81,14 @@ section{
     color: #070024;
     text-align: center;
   }
-  .card p {
+  .product-con p {
     line-height: 2em;
     color: #625a71;
   }
-  .card:hover {
+  .product-con:hover {
     background-position: 0;
   }
-  .card:hover .icon:before {
+  .product-con:hover .icon:before {
     height: 2.25em;
     width: 2.25em;
   }
@@ -102,7 +103,7 @@ section{
     section {
       padding: 1em;
     }
-    .card {
+    .product-con {
       padding: 5em 2em;
     }
     .column {

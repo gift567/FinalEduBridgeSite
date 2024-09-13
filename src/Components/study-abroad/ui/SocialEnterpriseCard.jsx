@@ -1,13 +1,25 @@
-const SocialEnterpriseCard = ({title}) => {
+export default function SocialEnterpriseCard ({title, description, image}) {
     return (
-        <div className="max-w-sm sm:max-w-md md:max-w-lg text-center flex flex-col gap-3 p-5 py-6 bg-white rounded-md shadow-lg">
-            <h1 className="md:text-2xl font-semibold mb-2">{title}</h1>
-            <span className="mb-3 text-sm md:text-lg text-gray-700">
-                Improve your English and French speaking, listening,reading and writing skills with our expert teachersking, listening,reading
-                and writing skills with us.
-            </span>
-        </div>
+        <div
+            className="relative grid h-[40rem] w-full lg:max-w-[48rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
+            <div
+                className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent`}
+                    style={{
+                        backgroundImage: `url(${image})`,
+                        backgroundPosition: 'center'
+                    }}
+                >
+                <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
+            </div>
+            <div className="relative p-6 px-6 py-14 md:px-12">
+                <h2 className="mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                {description}
+                </h2>
+                <h5 className="block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400">
+                {title}
+                </h5>
+               
+            </div>
+</div>   
     )
 }
-
-export default SocialEnterpriseCard
